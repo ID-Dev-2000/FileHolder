@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.columnCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.columnCenterNoVert {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* AWS TAG BEGIN */
+.poweredByAWS {
+    position: absolute;
+    bottom: 8px;
+    left: 50vw;
+    right: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* AWS TAG END */
+
+
+/* MAIN BEGIN */
+.mainContentParent {
+    background-color: snow;
+    margin-top: 10vh;
+    width: 600px;
+    height: 500px;
+    border: 1px solid black;
+    box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.2);
+}
+
+.mainName {
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.mainContent {
+    padding-top: 50px;
+    position: relative;
+    height: 100%;
+}
+
+.mainButton {
+    margin-bottom: 10px;
+    width: 175px;
+    height: 50px;
+    border: 1px solid black;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.15);
+    background-color: whitesmoke;
+}
+
+.mainButton:hover {
+    cursor: pointer;
+    background-color: ghostwhite;
+}
+
+.mainButton:active {
+    background-color: whitesmoke;
+}
+
+.aboutButton {
+    margin-bottom: 10px;
+    width: 90px;
+    height: 25px;
+    border: 1px solid black;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.15);
+    background-color: whitesmoke;
+}
+
+.aboutButton:hover {
+    cursor: pointer;
+    background-color: ghostwhite;
+}
+
+.aboutButton:active {
+    background-color: whitesmoke;
+}
+/* MAIN END */
+
+/* MODALS BEGIN */
+.bodyBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modalBox {
+    width: 300px;
+    height: 500px;
+    background-color: snow;
+    border: 1px solid black;
+    position: relative;
+    z-index: 1;
+}
+
+.aboutModal {
+    width: 300px;
+    height: 600px;
+    border: 1px solid black;
+    background-color: snow;
+    position: relative;
+    padding: 0 25px;
+}
+
+.closeModalButton {
+    position: absolute;
+    right: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 1px solid black;
+    background-color: whitesmoke;
+    margin: 3px 3px 0 0;
+    user-select: none;
+}
+
+.closeModalButton:hover {
+    cursor: pointer;
+    background-color: ghostwhite;
+}
+
+.closeModalButton:active {
+    background-color: whitesmoke;
+}
+
+.wordBreak {
+    text-align: center;
+}
+
+.loginRegisterButtons {
+    margin-bottom: 10px;
+    width: 100px;
+    height: 33px;
+    border: 1px solid black;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.15);
+    background-color: whitesmoke;
+}
+
+.loginRegisterButtons:hover {
+    cursor: pointer;
+    background-color: ghostwhite;
+}
+
+.loginRegisterButtons:active {
+    background-color: whitesmoke;
+}
+
+.userUpdates, .captchaUpdates {
+    font-size: small;
+    color: crimson;
+    background-color: lightyellow;
+    border: 1px dashed crimson;
+    margin: 0;
+    padding: 3px 6px;
+}
+
+.captchaUpdates2 {
+    font-size: small;
+    color: navy;
+    background-color: aquamarine;
+    border: 1px dashed navy;
+    margin: 0;
+    padding: 3px 6px;
+}
+
+.captchaDisplay {
+    background-color: lavender;
+    width: 170px;
+    height: 80px;
+    margin: 6px;
+    border: 1px solid black;
+}
+
+.captchaInput {
+    width: 150px;
+}
+
+.captchaContent {
+    font-family: 'Roboto Mono', monospace;
+    user-select: none;
+    text-decoration: line-through wavy yellow;
+}
+
+.registrationSuccess {
+    font-size: small;
+    color: seagreen;
+    background-color: beige;
+    border: 1px dashed seagreen;
+    margin: 0;
+    padding: 3px 6px;
+}
+
+.loginSuccess {
+    font-size: small;
+    color: seagreen;
+    background-color: beige;
+    border: 1px dashed seagreen;
+    margin: 0;
+    padding: 3px 6px;
+}
+
+.loadingText {
+    font-family: 'Lora', serif;
+}
+
+.logoutConfirmDenyButton {
+    margin-bottom: 10px;
+    width: 85px;
+    height: 28px;
+    border: 1px solid black;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.15);
+    background-color: whitesmoke;
+}
+
+.logoutConfirmDenyButton:hover {
+    cursor: pointer;
+    background-color: ghostwhite;
+}
+
+.logoutConfirmDenyButton:active {
+    background-color: whitesmoke;
+}
+/* MODALS END */
+
+/* HEADER BEGIN */
+.headerLinks {
+    all: unset;
+}
+
+.header{
+    background-image: linear-gradient(white, snow);
+    border-bottom: 1px solid black;
+    flex-direction: row;
+    height: 40px;
+}
+
+.headerItem {
+    margin: 0px 12px;
+    padding: 3px 6px;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    user-select: none;
+}
+
+.headerItem:hover {
+    background-color: ghostwhite;
+    cursor: pointer;
+}
+
+.headerItem:active {
+    background-color: whitesmoke;
+}
+/* HEADER END */
+
+/* UPLOAD BEGIN */
+.fileUpload {
+    width: 250px;
+    background-color: whitesmoke;
+    padding: 10px;
+    border: 1px solid black;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.15);
+}
+
+.fileUpload:hover {
+    cursor: pointer;
+    background-color: ghostwhite;
+}
+
+.fileUpload:active {
+    background-color: whitesmoke;
+}
+
+.uploadButton {
+    width: 150px;
+    height: 25px;
+    border: 1px solid black;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.15);
+    background-color: whitesmoke;
+    font-weight: bold;
+}
+
+.uploadButton:hover {
+    cursor: pointer;
+    background-color: ghostwhite;
+}
+
+.uploadButton:active {
+    background-color: whitesmoke;
+}
+
+.uploadError {
+    color: crimson;
+    background-color: lightyellow;
+    border: 1px dashed crimson;
+    margin: 16px 0px 0px 0px;
+    padding: 3px 6px;
+}
+
+.alertP {
+    color: black;
+    background-color: lavender;
+    border: 1px dashed black;
+    margin: 16px 0px 0px 0px;
+    padding: 3px 6px;
+}
+/* UPLOAD END */
+
+/* VIEW FILES BEGIN */
+.pageButtonsParent {
+    margin: 16px;
+    user-select: none;
+}
+
+.pageButton {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin: 4px;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    color: black;
+    user-select: none;
+}
+
+.activePageButtonBackground {
+    background-color: gainsboro;
+}
+
+.pageButton:hover {
+    cursor: pointer;
+    background-color: ghostwhite;
+}
+
+.pageButton:active {
+    color: black;
+    background-color: whitesmoke;
+}
+
+.pageButton:link {
+    text-decoration: none;
+}
+
+/* VIEW FILES TABLE BEGIN */
+td {
+    border-right: 1px solid black;
+    padding: 0px 8px;
+}
+
+.deleteButtonRow {
+    border: none;
+}
+
+.mobileIndicator {
+    display: none;
+}
+/* VIEW FILES TABLE END */
+
+.thumbnail {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    margin-bottom: 8px;
+    user-select: none;
+}
+
+/* VIEW FILES END */
+
+/* ACCOUNT HANDLER BEGIN */
+.accountDetailsParent {
+    width: 250px;
+    height: 400px;
+}
+
+.deleteRow {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.accountLink {
+    cursor: pointer;
+}
+
+.deleteLink {
+    text-decoration: none;
+    color: black;
+}
+/* ACCOUNT HANDLER END */
+
+/* DEMONSTRATION BEGIN */
+.demoBox {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    border: 1px solid black;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.15);
+    background-color: snow;
+}
+
+.demoVideo {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    position: absolute;
+}
+/* DEMONSTRATION END */
+
+/* MOBILE RESPONSIVE BEGIN */
+@media only screen and (max-width: 800px) {
+    .mainContentParent {
+        width: 80%;
+    }
+
+    .header {
+        margin-right: 0;
+    }
+
+    .headerItem {
+        margin: 0px 4px;
+    }
+
+    .thumbnail {
+        display: none;
+    }
+
+    #fileTable {
+        margin-left: 33%;
+    }
+
+    .mobileIndicator {
+        display: block;
+        margin: 0;
+    }
+
+    .demoVideo, .demoBox {
+        width: 90vw;
+        height: 60vh;
+    }
+}
+/* MOBILE RESPONSIVE END */
